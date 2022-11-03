@@ -1,0 +1,176 @@
+
+*{margin: 0 ; padding: 0;}
+section{width: 100%; height: 700px;
+    padding-top: 70px;
+    }
+ul,li{list-style: none;}
+a{text-decoration: none;
+    color: #606060;
+}
+#wrap{width: 100%;}
+header{width: 100%;
+    border-bottom: 1px solid #ccc;
+    position: fixed;  z-index: 9999;
+    background-color: white;    
+            height: 70px;}
+.header_in{width:1200px; margin: 0 5.6%; 
+    height: 70px;
+    position: relative;
+
+    }
+.header_in .logo{width: 200px;
+               text-align: center;  height: 70px; float: left;}
+nav{float: left;  
+        width: 700px; height: 80px; margin: 0 auto;}
+nav li{float: left; width: 220px; height: 70px;
+            line-height: 70px;
+            margin-left: 10px;
+            text-align: center;
+         }
+.login{width:200px; height: 70px;
+        float: left;}
+.login_top{width: 100%; height: 35px; float: left;
+    text-align: center; font-size: 12px;}
+.login_bottom{width: 100%; margin-left: 10px;
+        height:35px; line-height: 10px;
+float: left; text-align: center;}
+
+
+.log{width: 400px;
+    top: 60px;
+    border-radius:10px;
+
+    display: none;
+    text-align: center;
+    right: 20px; 
+    position: absolute;
+        border: 1px solid #ccc;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.226);
+}
+
+
+
+/* 헤더모바일 */
+
+.nav_menuM{text-align: center;
+    display: none;
+    margin-top: 80px;
+    border:1px solid #ccc;
+    border-top: 0px;
+    position: fixed;
+    z-index: 9998;
+    background-color: white;
+    width: 100%; margin: 0 auto;
+}
+.nav_menuM li{padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.nav_menuM li a.on{color: #f8f8f8;
+    transition: all 1s;
+}
+.nav_menuM li.on{
+    transition: all 1s;
+
+    background-color: #606060;
+}
+
+.M_login{width: 50px;
+    display: none;
+    background: url(/image/icons8-둥근-메뉴-50.png);
+    height: 30px;}
+
+
+.input_con{width: 80%;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;}  
+#login{ width: 50%; 
+    border: 1px solid #ccc;
+            height:30px;
+            margin: 5px;}
+
+.log_text{color: rgb(125, 162, 236);
+                margin: 10px auto;
+                            }  
+#password{width: 50%;
+    height:30px;
+    border: 1px solid #ccc;
+    margin: 5px; }
+#log_go{width: 50%; height: 40px;
+    background-color: rgb(125, 162, 236);
+    color: #f8f8f8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+}
+.newp01{width: 100%; height: 250px;}
+.newMain{
+    width: 1200px;
+    margin: 0 auto;        
+    text-align: center;
+    height: 250px;}
+.newinfo{width: 50%;
+            height: 550px;
+margin: 0 auto;
+            }
+.newinfo input{margin: 15px; 
+        border: 1px solid #ccc}
+#newId{width: 50%; height: 50px;
+            margin-top: 30px;}
+#newPw{width: 50%; height: 50px;}
+#newCh{width: 50%; height: 50px;
+    background-color: rgb(125, 162, 236);
+    color: #f8f8f8;
+    border: none;
+}            
+
+@media screen and (max-width:1024px){
+    .header_in {width: 100%;}
+    .header_in .logo{width: 18.1%;}
+    nav{width: 55.6%;}
+    nav li{width: 30.5%; margin-left: 1%;}
+    .login{width: 18%;}
+    .newMain{width: 100%;}
+    .newinfo{width:80%;}
+
+}
+    
+
+    @media screen  and (max-width:767px) {
+
+        .header_in{width: 100%;}
+        .header_in .logo{width: 80%;
+            text-align: left;} 
+            
+            nav{
+            display: none;}
+        nav li{width:10.6% ;}
+        .login{width: 20%;
+        }
+        .login_top{display: none;}
+        .login_bottom{display: none;}
+    
+    .nav_menuM{display: block;
+    margin-top: 70px;
+    }
+    .M_login{width: 50px;
+        height: 50px;
+        display: block;}
+    
+        .newMain{width: 100%;}
+        .newinfo{width:90%;}
+    }
+
+
+        @media screen  and (max-width:480px) {
+
+            .login{width: 13%;
+                margin-right: 7%;
+            }
+        
+            .newMain{width: 100%;}
+            .newinfo{width:90%;}
+
+        }
+           

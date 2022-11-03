@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('.log').hide()
+            $('.logBT').click(function(e){
+                $('.log').fadeToggle(500)
+            })
+            $('.log').mouseleave(function(){
+                $('.log').fadeOut(500)
+            })
+            $('.nav_menuM').hide()
+            $('.M_login').click(function(){
+                    $('.nav_menuM').slideToggle(500)
+                })
+
+                $('.nav_menuM li').hover(function(){
+                    var m=$(this).index()
+                    $(this).addClass('on')
+                 $('.nav_menuM li a').eq(m).addClass('on')
+                },function(){
+                    $(this).removeClass('on')
+                    $('.nav_menuM li a').removeClass('on')})
+
+
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_in">
+                <h1 class="logo"><a href="./index.html">logo</a></h1>
+                <nav>
+                    <ul class="nav_menu">
+                        <li><a href="#">메뉴1</a></li>
+                        <li><a href="#">메뉴2</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                    
+                    </ul>
+                </nav>
+
+                <div class="login">
+                    <div class="login_top">
+                        <a href="#">고객센터</a>
+                        <a href="#">이벤트</a>
+                    </div>
+                    <div class="login_bottom">
+                        <a href="#" class="logBT">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+
+                        <div class="M_login">
+                            <img src="">
+                        </div>
+                </div>
+            </div>
+        </header>
+        <div class="nav_menuM">
+            <ul class="menuM">
+            
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#" class="logBT">로그인</a></li>
+                <li><a href="./new.html">회원가입</a>
+           
+            </ul>
+        </div>
+
+
+<section class="newp01">
+    <div class="newMain">
+        <div class="newinfo">
+        <input type="text" id="newId" placeholder="사용하실 ID를 입력해주세요">
+        <input type="password" id="newPw" placeholder="사용하실 비밀번호를 입력해주세요"> 
+        <button type="button" id="newCh">확인</button> 
+    </div>
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+<div class="log">
+    <div class="log_text">
+       <h1>Login</h1>
+       <div class="input_con">
+        <input type="text" placeholder="ID를 입력해주세요" id="login">
+        <input type="password" id="password" placeholder="비밀번호를 입력해주세요">
+       <button id="log_go">로그인</button>
+    </div>
+   </div>
+</div>
+<script src="./js/data.js"></script>
+</body>
+</html>
