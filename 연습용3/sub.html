@@ -15,7 +15,7 @@
             $('.nav_menuM').hide()
 
             $('.log').hide()
-            $('.logBT').click(function(e){
+            $('.logBT').click(function(){
                 $('.log').fadeToggle(500)
             })
             $('.log').mouseleave(function(){
@@ -57,6 +57,19 @@
                 $(this).removeClass('on')
             }
             )
+
+            $('.log_textP').click(function(){
+                $('.log').fadeOut(500)
+                
+            })
+            $('.log_textP').hover(function(){
+                $(this).addClass('on')
+            },
+            function(){
+                $(this).removeClass('on')
+            }
+            
+            )
             
             
             function move(i){
@@ -81,9 +94,9 @@
                 <h1 class="logo"><a href="/index.html">logo</a></h1>
                 <nav>
                     <ul class="nav_menu">
-                        <li><a href="">메뉴1</a></li>
-                        <li><a href="">메뉴2</a></li>
-                        <li><a href="">메뉴3</a></li>
+                        <li><a href="./index.html">메인메뉴</a></li>
+                        <li><a href="./index.html">이미지</a></li>
+                        <li><a href="#">상품</a></li>
                   
                     </ul>
                 </nav>
@@ -95,7 +108,7 @@
                     </div>
                     <div class="login_bottom">
                         <a href="#" class="logBT">로그인</a>
-                        <a href="#">회원가입</a>
+                        <a href="./new.html">회원가입</a>
                     </div>
                     <div class="M_login">
                         <img src="">
@@ -191,6 +204,7 @@
         </section>
         <div class="log">
             <div class="log_text">
+                <p class="log_textP">X</p>
                <h1>Login</h1>
                <div class="input_con">
                 <input type="text" placeholder="ID를 입력해주세요" id="login">

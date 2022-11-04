@@ -19,6 +19,7 @@ header{width: 100%;
 
     }
 .header_in .logo{width: 200px;
+    line-height: 50px;
                text-align: center;  height: 70px; float: left;}
 nav{float: left;  
         width: 700px; height: 80px; margin: 0 auto;}
@@ -37,16 +38,16 @@ float: left; text-align: center;}
 
 
 .log{width: 400px;
-    top: 60px;
+    top: 70px;
     border-radius:10px;
-
+    z-index: 9999;
+    background-color: white;
     display: none;
     text-align: center;
     right: 20px; 
     position: absolute;
         border: 1px solid #ccc;
     height: 200px;
-    background-color: rgba(255, 255, 255, 0.226);
 }
 
 
@@ -89,7 +90,19 @@ float: left; text-align: center;}
     border: 1px solid #ccc;
             height:30px;
             margin: 5px;}
-
+.log_textP{width: 20px; height: 20pxs;
+                right: 10px;
+                top: 10px;
+            text-align: center; 
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 2px;       
+                border: 1px solid #ccc;
+                    position: absolute;}
+.log_textP.on{  
+                color: #f8f8f8;
+                transition: 0.5s all;
+                background-color: rgb(125, 162, 236); }
 .log_text{color: rgb(125, 162, 236);
                 margin: 10px auto;
                             }  

@@ -1,5 +1,4 @@
-*{margin: 0; padding: 0;
-font-family: sans-serif;}
+*{margin: 0; padding: 0;}
 ul,li{list-style: none;}
 a{text-decoration: none;
     color: #606060;}
@@ -17,6 +16,9 @@ header{width: 100%;
 .header_in{width:1200px; margin: 0 5.6%; height: 70px;
      }
 .header_in .logo{width: 200px;
+    line-height: 50px;
+    color: red;
+    background-color: black;
                text-align: center;  height: 70px; float: left;}
 nav{float: left;  
         width: 700px; height: 80px; margin: 0 auto;}
@@ -116,7 +118,7 @@ margin: 0 auto;
 
 .sub01_box{width: 600px; height: 150px;
     margin-top: 10px;       
-    border-bottom: 2    px solid #606060;
+    border-bottom: 1px solid #ccc;
     }
 .sub01_box span{color: red;
             margin-right: 10px;}
@@ -245,6 +247,19 @@ right: 10px;}
     border: 1px solid #ccc;
             height:30px;
             margin: 5px;}
+.log_textP{width: 20px; height: 20pxs;
+                right: 10px;
+                top: 10px;
+            text-align: center; 
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 2px;       
+                border: 1px solid #ccc;
+                    position: absolute;}
+.log_textP.on{  
+                color: #f8f8f8;
+                transition: 0.5s all;
+                background-color: rgb(125, 162, 236); }            
 
 .log_text{color: rgb(125, 162, 236);
                 margin: 10px auto;
@@ -289,6 +304,20 @@ right: 10px;}
     background: url(/image/icons8-둥근-메뉴-50.png);
     height: 30px;}
 
+
+    .log{width: 400px;
+        top: 60px;
+        border-radius:10px;
+    
+        display: none;
+        text-align: center;
+        right: 20px; 
+        position: absolute;
+            border: 1px solid #ccc;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.226);
+    }
+
 @media screen and (max-width:1024px){
     .header_in {width: 100%;}
     .header_in .logo{width: 18.1%;}
@@ -297,8 +326,8 @@ right: 10px;}
     .login{width: 18%;}
 .sub01{width: 100%; margin: 0 auto;}
 .sub01_left{width: 50%;}
-.sub01_leftI{width:100%;}
-.sub01_view li{width: 100%;}
+.sub01_leftI{width:95%;}
+.sub01_view li{width: 100%; margin: 0 auto;}
 .sub01_button{width: 100%;}
 
 .sub01_button li{width: 30%;}
@@ -335,18 +364,6 @@ right: 10px;}
     .delete{width:8.8% ;}
 
 
-.log{width: 400px;
-    top: 60px;
-    border-radius:10px;
-
-    display: none;
-    text-align: center;
-    right: 20px; 
-    position: absolute;
-        border: 1px solid #ccc;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.226);
-}
 
 .input_con{width: 80%;
     height: 150px;
@@ -437,7 +454,7 @@ right: 10px;}
 }
 
 
-@media screen  and (max-width:480px) {
+@media screen and (max-width:480px) {
     .login{width: 13%;
         margin-right: 7%;}
 
@@ -458,19 +475,16 @@ right: 10px;}
 
     .delete{height:20px;
             width:50px;}
-
-
+        
+.log{width: 100%;
+         margin: 0 auto;
+                    z-index: 9999;
+                    background-color:white; }
+            
 
 
 
 }
-
-
-.log{width: 90%;
-    margin: 0 auto;
-        z-index: 9999;
-        background-color: white;
-            }
 
 
    
