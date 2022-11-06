@@ -17,8 +17,6 @@ header{width: 100%;
      }
 .header_in .logo{width: 200px;
     line-height: 50px;
-    color: red;
-    background-color: black;
                text-align: center;  height: 70px; float: left;}
 nav{float: left;  
         width: 700px; height: 80px; margin: 0 auto;}

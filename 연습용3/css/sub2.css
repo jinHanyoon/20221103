@@ -1,6 +1,7 @@
 *{margin: 0; padding: 0;}
 ul,li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none;
+        color: #606060;}
 
 #wrap{width: 100%;
         background-color: orange;}
@@ -13,8 +14,6 @@ header{width: 100%;
 .header_in{width:1200px; margin: 0 5.6%; height: 70px;
              }
 .header_in .logo{width: 200px;
-    color: red;
-    background-color: black;
             line-height: 50px;
                        text-align: center;  height: 70px; float: left;}
 nav{float: left;  
@@ -34,17 +33,50 @@ nav li{float: left; width: 220px; height: 70px;
 
 
 .sub2_page{width: 1200px;
-margin: 0 auto;
-
+margin: 50px auto;
             height: 800px;}
 .sub2_left{ width: 600px; height: 500px;
-        background-color: antiquewhite;             
-    float: left;}
-.sub2_img{}
+ background-color: antiquewhite;             
+
+ float: left;}
+.sub2_left_view{width: 500px; 
+        overflow: hidden;
+                background-color: #606060;
+                height: 500px;
+                margin: 0 auto;}
+.sub2_img{width: 1500px;
+        height: 500px;}
+.sub2_img li{width: 500px;
+        float: left;
+  height: 500px;
+}
+.sub2_img li:nth-child(1){background-color: yellow;}
+.sub2_img li:nth-child(2){background-color: yellowgreen;}
+.sub2_img li:nth-child(3){background-color: whitesmoke;}
+
+
 
 
 .sub2_right{width: 600px; 
-    background-color: coral;
+    background-color: white;
     height: 500px;
 float: left;}
+
+.sub2_text{width: 500px;
+        margin: 20px auto;
+        height: 450px;
+    }
+.sub2_textL{width: 20%;height: 450px;
+        float: left;
+      }
+
+.sub2_textL li{height: 50px; 
+        margin: 30px 5px;      
+        line-height: 50px;}
+.sub2_textR{width: 80%; height: 450px;
+        float: left;
+ }
+.sub2_textR li{height: 50px;
+                        margin: 30px 10px;
+                                line-height: 50px;}
 

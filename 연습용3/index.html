@@ -10,8 +10,14 @@
 
     <script>
         $(document).ready(function(){
-            let current =0
-
+            var current =0
+            var scene01Num = 0
+            var scene02Num = 0
+            var scene03Num = 0
+            $('.page03').hide()
+            $('.page01').hide()
+            $('.page02').hide()
+                
             $('.log').hide()
             $('.logBT').click(function(e){
                 $('.log').fadeToggle(500)
@@ -56,11 +62,9 @@
                     e.preventDefault()
                     var q=$(this).index()
                     console.log(q)
-
                     let section = $('section').eq(q)
                     let tt=section.offset().top
-                    $('html, body').stop().animate({scrollTop:tt},800)
-                    
+                    $('html, body').stop().animate({scrollTop:tt},800,)
                 })
                 $(window).scroll(function(){
                     var sct=$(window).scrollTop();
@@ -70,8 +74,6 @@
                         var q=tg.index();
                         console.log(q)
                         if(tg.offset().top <=sct){
-
-
                         }
                     })
                 })
@@ -120,8 +122,53 @@
         }
             })
 
+            $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop()
+            if(scrollTop > 10 && scene01Num == 1){
+                scene01Num=0;
+                $('.page01').fadeIn(500)
+            }else if(scrollTop < 4500 && scene01Num ==0){
+                scene01Num=1;
+            }
+        })
+
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop()
+            if(scrollTop > 300 && scene03Num == 1){
+                scene03Num=0;
+                $('.page02').fadeIn(500)
+            } 
+            else if(scrollTop < 4500 && scene03Num == 0){
+                scene03Num=1;
+            }
+        })
+
+
+
+
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop()
+            if(scrollTop > 1000 && scene02Num == 1){
+                scene02Num=0;
+                $('.page03').fadeIn(500)
+          
+            } 
+            else if(scrollTop < 4300 && scene02Num == 0){
+                scene02Num=1;
+            
+            }
+        })
+
+
+                    
+                })
+           
+
+
+
+
+
         
-            })
         
     </script>
     
@@ -165,7 +212,7 @@
             </ul>
         </div>
 
-        <section>
+        <section class="page01_se">
             <div class="page01">
                 <div class="page01_left">
                     What Your
