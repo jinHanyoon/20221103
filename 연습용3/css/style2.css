@@ -1,7 +1,7 @@
 *{margin: 0 ; padding: 0;}
 section{width: 100%; height: 700px;
     padding-top: 70px;
-background-color: black;
+background-color: rgba(0, 0, 0, 0.897);
 
 }
 
@@ -12,9 +12,9 @@ color: #f8f8f8;}
 #wrap{width: 100%;
 }
 header{width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(71, 70, 70);
     position: fixed;  z-index: 9999;
-    background-color: rgba(255, 255, 255, 0);    
+    background-color: rgba(0, 0, 0, 0.74);   
             height: 70px;}
 .header_in{width:1200px; margin: 0 5.6%; 
     height: 70px;
@@ -26,20 +26,20 @@ header{width: 100%;
     color: #f8f8f8;
          text-align: center;  height: 70px; float: left;}
 nav{float: left;  
-        width: 700px; height: 80px; margin: 0 auto;}
-nav li{float: left; width: 220px; height: 70px;
+        width: 800px; height: 80px; margin: 0 auto;
+    }
+nav li{float: left; width: 100px; height: 70px;
             line-height: 70px;
             margin-left: 10px;
-            text-align: center;
+            text-align: left;
          }
 
 .nav li a{font-weight: bold;}        
-.login{width:200px; height: 70px;
+.login{width:150px; height: 70px;
+    font-size: 13px;
         float: left;}
-.login_top{width: 100%; height: 35px; float: left;
-    text-align: center; font-size: 12px;}
 .login_bottom{width: 100%; margin-left: 10px;
-        height:35px; line-height: 10px;
+        height:35px; line-height: 45px;
 float: left; text-align: center;}
 
 .page01{width: 1200px; margin: 0 auto;
@@ -47,7 +47,7 @@ float: left; text-align: center;}
 .page01 >div{width: 400px; height: 300px; float: left;
     color: #f8f8f8;
     font-weight: bold;
-text-align: center; font-size: 80px; margin: 15% 0; line-height: 250px;                      }
+text-align: center; font-size: 60px; margin: 15% 0; line-height: 250px;                      }
 .page01 div:nth-child(1){line-height: 150px;}
 .page01 div:nth-child(2){
     
@@ -302,11 +302,12 @@ footer{width: 100%;
 .log{width: 400px;
     top: 60px;
     border-radius:10px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     display: none;
     text-align: center;
     right: 20px; 
     position: absolute;
+    z-index: 9999;
         border: 1px solid #ccc;
     height: 200px;
 }
@@ -326,7 +327,6 @@ text-align: center;
 cursor: pointer;
 font-weight: bold;
 border-radius: 2px;       
-    border: 1px solid #ccc;
         position: absolute;
             }
 .log_textP.on{  
@@ -439,7 +439,7 @@ header{width: 100%;
     nav li{width:10.6% ;}
     .login{width: 20%;
     }
-    .login_top{display: none;}
+   
     .login_bottom{display: none;}
 
 .nav_menuM{display: block;

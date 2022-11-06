@@ -2,6 +2,8 @@
 *{margin: 0 ; padding: 0;}
 section{width: 100%; height: 700px;
     padding-top: 70px;
+
+
     }
 ul,li{list-style: none;}
 a{text-decoration: none;
@@ -21,20 +23,20 @@ header{width: 100%;
 .header_in .logo{width: 200px;
     line-height: 50px;
                text-align: center;  height: 70px; float: left;}
-nav{float: left;  
-        width: 700px; height: 80px; margin: 0 auto;}
-nav li{float: left; width: 220px; height: 70px;
-            line-height: 70px;
-            margin-left: 10px;
-            text-align: center;
-         }
-.login{width:200px; height: 70px;
-        float: left;}
-.login_top{width: 100%; height: 35px; float: left;
-    text-align: center; font-size: 12px;}
-.login_bottom{width: 100%; margin-left: 10px;
-        height:35px; line-height: 10px;
-float: left; text-align: center;}
+               nav{float: left;  
+                width: 800px; height: 80px; margin: 0 auto;
+            }
+        nav li{float: left; width: 100px; height: 70px;
+                    line-height: 70px;
+                    margin-left: 10px;
+                    text-align: left;
+                 }
+         .login{width:200px; height: 70px;
+            font-size: 13px;
+                float: left;}
+        .login_bottom{width: 100%; margin-left: 10px;
+                height:35px; line-height: 45px;
+        float: left; text-align: center;}
 
 
 .log{width: 400px;

@@ -11,9 +11,9 @@
     <script>
         $(document).ready(function(){
             var current =0
-            var scene01Num = 0
-            var scene02Num = 0
-            var scene03Num = 0
+            var scene01Num = ''
+            var scene02Num = ''
+            var scene03Num = ''
             $('.page03').hide()
             $('.page01').hide()
             $('.page02').hide()
@@ -127,8 +127,15 @@
             if(scrollTop > 10 && scene01Num == 1){
                 scene01Num=0;
                 $('.page01').fadeIn(500)
-            }else if(scrollTop < 4500 && scene01Num ==0){
+                $('.page01_left01').fadeIn(2500)
+                $('.page01_right01').fadeIn(2700)
+                $('.page01_right').fadeIn(4500)
+            }else if(scrollTop < 1200 && scene01Num ==0){
                 scene01Num=1;
+
+                $('.page01_left01').fadeOut(3000)
+                $('.page01_right01').fadeOut(3500)
+                $('.page01_right').fadeOut(3500)
             }
         })
 
@@ -137,9 +144,13 @@
             if(scrollTop > 300 && scene03Num == 1){
                 scene03Num=0;
                 $('.page02').fadeIn(500)
+           
+              
             } 
             else if(scrollTop < 4500 && scene03Num == 0){
                 scene03Num=1;
+           
+
             }
         })
 
@@ -157,19 +168,8 @@
                 scene02Num=1;
             
             }
-        })
-
-
-                    
+        })              
                 })
-           
-
-
-
-
-
-        
-        
     </script>
     
 </head>
@@ -188,10 +188,6 @@
                 </nav>
 
                 <div class="login">
-                    <div class="login_top">
-                        <a href="#">고객센터</a>
-                        <a href="#">이벤트</a>
-                    </div>
                     <div class="login_bottom">
                         <a href="#" class="logBT">로그인</a>
                         <a href="./new.html">회원가입</a>
@@ -215,7 +211,8 @@
         <section class="page01_se">
             <div class="page01">
                 <div class="page01_left">
-                    What Your
+                    <h1 class="page01_left01">What</h1>
+                    <h1 class="page01_right01">Your</h1>
                 </div>
                 <div class="page01_center">
                     <ul class="page01_centerList">
@@ -349,9 +346,9 @@
 
                 </div>
                 <div class="footer_right">
-                    <p>(주)회사는 개별 항공권 및 숙박 상품에 대하여 통신판매중개자로서 </p>
+                    <p>(주)회사는 개별 상품 및  상품에 대하여 통신판매중개자로서 </p>
                     <p>통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래 등에 대해 책임을 지지 않습니다.</p> 
-                    <p>(주)회사는 렌터카 파트너사가 제공하는 일부 렌터카에 대하여 통신판매중개자의 지위를 가지며, 해당 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+                    <p>(주)회사는 렌터카 파트너사가 제공하는 일부 상품에 대하여 통신판매중개자의 지위를 가지며, 해당 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
                     
                    <span> AAAAA ⓒ AAAA AAA AAAA AAAAA</span>
 
