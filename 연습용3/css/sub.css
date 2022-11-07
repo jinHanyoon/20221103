@@ -15,8 +15,14 @@ header{width: 100%;
    background-color: white;
     position: fixed;
             height: 70px;}
+            .header_in{width:1200px; margin: 0 auto; 
+                height: 70px;
+                position: relative;
+            
+                }
             .header_in .logo{width: 150px;
                 line-height: 50px;
+                margin: 0 auto;
                 color: #f8f8f8;
                      text-align: center;  height: 70px; float: left;}
             nav{

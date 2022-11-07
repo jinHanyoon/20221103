@@ -1,117 +1,180 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="./css/sub2.css" />
     <script src="./js/main.js"></script>
     <script>
-        $(document).ready(function(){
-            let current= 0; 
-            $('.sub2_btn li').click(function(){
-                var i= $(this).index()
-             $('.sub2_btn li').removeClass('on')
-                 $(this).addClass('on')
-                console.log(i)
-                move(i)
-
-            })
-            function move(i){
-                if(current == i)return;//같은 버튼을 클릭했을때 실행되지 않게 함 
-                let currentE1 = $('.sub2_img li').eq(current);//슬라이드에서 현재보이는 이미지 li
-                let nextE1 = $('.sub2_img li').eq(i); //슬라이드에서 다음에 보이는 이미지 li
-                currentE1.css({opacity:1}).stop().animate({opacity:0})
-                nextE1.css({opacity:0}).stop().animate({opacity:1})
-                current =i
+      $(document).ready(function () {
+        let current = 0;
+        $(".sub2_btn li").click(function () {
+          var i = $(this).index();
+          $(".sub2_btn li").removeClass("on");
+          $(this).addClass("on");
+          console.log(i);
+          move(i);
+        });
+        function move(i) {
+          if (current == i) return; //같은 버튼을 클릭했을때 실행되지 않게 함
+          let currentE1 = $(".sub2_img li").eq(current); //슬라이드에서 현재보이는 이미지 li
+          let nextE1 = $(".sub2_img li").eq(i); //슬라이드에서 다음에 보이는 이미지 li
+          currentE1.css({ opacity: 1 }).stop().animate({ opacity: 0 });
+          nextE1.css({ opacity: 0 }).stop().animate({ opacity: 1 });
+          current = i;
         }
-        })
+      });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap">
-        <header>
-            <div class="header_in">
-                <h1 class="logo"><a href="/index.html">logo</a></h1>
-                <nav>
-                    <ul class="nav_menu">
-                        <li><a href="./index.html">메인메뉴</a></li>
-                        <li><a href="./index.html">이미지</a></li>
-                        <li><a href="#">상품</a></li>
-                  
-                    </ul>
-                </nav>
-                <div class="login">
-                 
-                    <div class="login_bottom">
-                        <a href="#" class="logBT">로그인</a>
-                        <a href="./new.html">회원가입</a>
-                    </div>
-                    <div class="M_login">
-                        <img src="">
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="nav_menuM">
-            <ul class="menuM">
-                <li><a href="./index.html">HOME</a></li>
-
-                <li><a href="#" class="logBT">로그인</a></li>
-                <li><a href="./new.html">회원가입</a>
-                </li>
-         
+      <header>
+        <div class="header_in">
+          <h1 class="logo"><a href="/index.html">logo</a></h1>
+          <nav>
+            <ul class="nav_menu">
+              <li><a href="./index.html">메인메뉴</a></li>
+              <li><a href="./index.html">이미지</a></li>
+              <li><a href="#">상품</a></li>
             </ul>
-        </div>
-
-        <div class="sub2_page">
-            <div class="sub2_left">
-                <div class="sub2_button">
-                    <ul class="sub2_btn">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="sub2_left_view">
-                <ul class="sub2_img">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+          </nav>
+          <div class="login">
+            <div class="login_bottom">
+              <a href="#" class="logBT">로그인</a>
+              <a href="./new.html">회원가입</a>
             </div>
+            <div class="M_login">
+              <img src="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="nav_menuM">
+        <ul class="menuM">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="#" class="logBT">로그인</a></li>
+          <li><a href="./new.html">회원가입</a></li>
+        </ul>
+      </div>
+      <main>
+        <section class="sub2_page">
+          <div class="sub2_page">
+            <div class="sub2_left">
+              <div class="sub2_button">
+                <ul class="sub2_btn">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="sub2_left_view">
+                <ul class="sub2_img">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
             </div>
             <div class="sub2_right">
-                <div class="sub2_text">
-                    <h1>SamSung/PHone/Book</h1>
-                    <div class="sub2_textL">
-                        <ul>
-                     
-                            <li>상품가격:</li>
-                            <li>소비자가격:</li>
-                            <li>할인가격:</li>
-                            <li>상품설명:</li>
-
-                        </ul>
-                    </div>
-                    <div class="sub2_textR">
-                        <ul>
-                       
-                            <li>000000원</li>
-                            <li>000000원</li>
-                            <li>000000원</li>
-                            <li>--</li>
-
-                        </ul>
-
-                    </div>
+              <div class="sub2_text">
+                <h1>SamSung/Phone/Book</h1>
+                <div class="sub2_textL">
+                  <ul>
+                    <li>상품가격:</li>
+                    <li>소비자가격:</li>
+                    <li>할인가격:</li>
+                    <li>상품설명:</li>
+                  </ul>
                 </div>
+                <div class="sub2_textR">
+                  <ul>
+                    <li>000000원</li>
+                    <li>000000원</li>
+                    <li>000000원</li>
+                    <li>--</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sub2_page2">
+          <div class="sub2_infoM">
+            <div class="sub2_info p1">
+              <div class="sub2_p1_left">
+                <div class="sub_p1_img"></div>
+                <p class="sub2_p1_line"></p>
+              </div>
+
+              <div class="sub2_p1_right">
+                <div class="sub2_p1_text">
+                  <h1>01</h1>
+                  <h2>보들도 스타일러쉬하게</h2>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                </div>
+              </div>
+            </div>
+            <div class="sub2_info p2">
+              <div class="sub2_info p2">
+                <div class="sub2_p2_left">
+                  <div class="sub2_p2_text">
+                    <h1>01</h1>
+                    <h2>보들도 스타일러쉬하게</h2>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                  </div>
+                </div>
+
+                <div class="sub2_p2_right">
+                  <div class="sub_p2_img"></div>
+                  <p class="sub2_p2_line"></p>
+                </div>
+              </div>
             </div>
 
+            <div class="sub2_info p3">
+              <div class="sub2_p1_left">
+                <div class="sub_p3_img"></div>
+                <p class="sub2_p3_line"></p>
+              </div>
 
-        </div>
+              <div class="sub2_p1_right">
+                <div class="sub2_p1_text">
+                  <h1>01</h1>
+                  <h2>보들도 스타일러쉬하게</h2>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub2_info p4">
+              <div class="sub2_info p2">
+                <div class="sub2_p2_left">
+                  <div class="sub2_p2_text">
+                    <h1>01</h1>
+                    <h2>보들도 스타일러쉬하게</h2>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                    <p>aaaaaaaaaaaaaaaa</p>
+                  </div>
+                </div>
+
+                <div class="sub2_p2_right">
+                  <div class="sub_p4_img"></div>
+                  <p class="sub2_p4_line"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    
-</body>
+  </body>
 </html>

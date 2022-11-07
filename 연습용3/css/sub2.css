@@ -14,6 +14,11 @@ header{width: 100%;
                     height: 70px;}
 .header_in{width:1200px; margin: 0 5.6%; height: 70px;
              }
+ .header_in{width:1200px; margin: 0 auto; 
+                height: 70px;
+                position: relative;
+            
+                }
              .header_in .logo{width: 150px;
                 line-height: 50px;
                 color: #f8f8f8;
@@ -44,14 +49,15 @@ header{width: 100%;
 margin: 50px auto;
             height: 800px;}
 .sub2_left{ width: 600px; height: 500px;
+        position: relative;
              
 
  float: left;}
 
  .sub2_button{width: 100px;
         position: absolute;
-        left: 125px;
-        z-index: 9999;
+        left: -50px;
+        z-index: 999;
                }
 .sub2_btn{}
 .sub2_btn li{ width: 100px;
@@ -73,9 +79,12 @@ margin: 50px auto;
 
 .sub2_btn li.on{opacity: 0.4;
         transition: 1s all;
+        left:20px;
+        
                    }
 .sub2_btn li::before{content: "";
             height: 100px;
+            height: 100%;
             opacity: 0.2;
          position: absolute;
           top: 0px;
@@ -88,9 +97,8 @@ margin: 50px auto;
             background-color: #000;
 }
 
-.sub2_left_view{width: 500px; 
+.sub2_left_view{width: 100%; 
         position: relative;
-          
                 height: 500px;
                 margin: 0 auto;}
 .sub2_img{width: 100%;
@@ -158,4 +166,120 @@ float: left;}
 .sub2_textR li{height: 50px; margin: 30px 0;
         width: 100%;
          line-height: 50px;}
+                                                           /* 2p 시작 */
 
+.sub2_page2{width: 100%; height: 2100px;
+             }
+.sub2_infoM{width: 1200px; height: 2000px;
+                        margin: 0 auto;}
+                                                     /* 2p p1시작 */
+.sub2_info{width: 100%;
+                height: 500px;
+                margin-top: 100px;}
+.sub2_p1_left{width: 50%; 
+        float: left;
+        position: relative;
+
+        height: 500px;
+}
+.sub_p1_img{width: 90%;
+height: 490px;
+z-index: 199;
+left: 20px;
+background: url(/image/early-morning-gedf922429_1280.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+}
+.sub2_p1_line{width:800px;
+        position: absolute;
+        background-color: rgba(175, 172, 172, 0.589);
+        z-index: 10;
+        left:-200px;
+        bottom: 0px;
+height: 150px;}       
+.sub2_p1_right{width: 49%; 
+        float: left;
+        height: 490px;
+   border: 1px solid #ccc;
+        }
+.sub2_p1_text{width: 100%;
+        margin-top: 100px;
+      }
+.sub2_p1_text h1{margin: 20px;}
+.sub2_p1_text h2{margin: 20px;}
+.sub2_p1_text p{font-size: 15px;
+                        margin: 20px;
+                }
+
+                                                 /* 2p p2시작 */
+.sub2_p2_right{width: 50%; 
+                float: left;
+                position: relative;
+        
+                height: 500px;
+        }
+.sub_p2_img{width: 90%;
+        height: 490px;
+        z-index: 199;
+        right: 20px;
+        background: url(/image/adult-g7838248a3_640.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        }
+.sub2_p2_line{width:800px;
+                position: absolute;
+                background-color: rgba(175, 172, 172, 0.589);
+                z-index: 10;
+                right: -200px;
+                bottom: 0px;
+        height: 150px;}       
+
+.sub2_p2_left{width: 49%; 
+                float: left;
+                height: 490px;
+           border: 1px solid #ccc;
+                }
+.sub2_p2_text{width: 100%;
+                margin-top: 100px;
+              }
+.sub2_p2_text h1{margin: 20px;}
+.sub2_p2_text h2{margin: 20px;}
+.sub2_p2_text p{font-size: 15px; margin: 20px;}
+
+                                                  /* 2p p3시작 */
+
+.sub_p3_img{width: 90%;
+        height: 490px;
+        z-index: 199;
+        left: 20px;
+        background: url(/image/page02\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;}
+.sub2_p3_line{width:800px;
+        position: absolute;
+        background-color: rgba(175, 172, 172, 0.589);
+        z-index: 10;
+        left:-200px;
+        bottom: 0px;
+height: 150px;}
+
+                                                  /* 2p p4시작 */
+
+.sub_p4_img{width: 90%;
+        height: 490px;
+        z-index: 199;
+        right: 20px;
+        background: url(/image/torii-g8c9a909f4_1280.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;}
+.sub2_p4_line{width:800px;
+        position: absolute;
+        background-color: rgba(175, 172, 172, 0.589);
+        z-index: 10;
+        right: -200px;
+        bottom: 0px;
+height: 150px;}
