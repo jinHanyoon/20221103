@@ -1,285 +1,386 @@
-*{margin: 0; padding: 0;
-        color: #606060;}
-ul,li{list-style: none;}
-a{text-decoration: none;
-        color: #606060;}
-
-#wrap{width: 100%;
-      }
-header{width: 100%;
-            border-bottom: 1px solid #ccc;
-            z-index: 9999;
-            background-color: white; 
-            position: fixed;
-                    height: 70px;}
-.header_in{width:1200px; margin: 0 5.6%; height: 70px;
-             }
- .header_in{width:1200px; margin: 0 auto; 
-                height: 70px;
-                position: relative;
-            
-                }
-             .header_in .logo{width: 150px;
-                line-height: 50px;
-                color: #f8f8f8;
-                     text-align: center;  height: 70px; float: left;}
-            nav{
-                float: left;
-                text-align: center;
-                    width: 600px; height: 80px;
-                margin: 0 100px;
-                }
-            nav li{float: left;
-                width:170px;
-                 height: 70px;
-                        line-height: 70px;
-                     }
-            
-            .nav li a{font-weight: bold;}        
-            .login{width:150px; height: 70px;
-                font-size: 13px;
-                  float: left;}
-            .login_bottom{width: 100%; margin-left: 10px;
-                    height:35px; line-height: 45px;
-            float: left; text-align: center;}
-            
-            .login a{margin: 5px;}
-
-.sub2_page{width: 1200px;
-margin: 50px auto;
-            height: 800px;}
-.sub2_left{ width: 600px; height: 500px;
-        position: relative;
-             
-
- float: left;}
-
- .sub2_button{width: 100px;
-        position: absolute;
-        left: -50px;
-        z-index: 999;
-               }
-.sub2_btn{}
-.sub2_btn li{ width: 100px;
-        margin-top: 50px;
-                height: 100px;
-                border-radius: 10px;
-                position: relative;
-                background-color: #f8f8f8;}
-.sub2_btn li:nth-child(1){background: url(/image/sub02img\ \(1\).jpg);
-                                background-size: cover;
-                                        background-position: center;}
-.sub2_btn li:nth-child(2){background: url(/image/sub02img\ \(2\).jpg);
-        background-size: cover;
-        background-position: center;}
-.sub2_btn li:nth-child(3){background: url(/image/sub02img\ \(3\).jpg);
-        background-size: cover;
-        background-position: center;
+* {
+  margin: 0;
+  padding: 0;
+  color: #606060;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #606060;
 }
 
-.sub2_btn li.on{opacity: 0.4;
-        transition: 1s all;
-        left:20px;
-        
-                   }
-.sub2_btn li::before{content: "";
-            height: 100px;
-            height: 100%;
-            opacity: 0.2;
-         position: absolute;
-          top: 0px;
-          border-radius: 10px;
-
-             left: 0px;
-              right: 0px;
-            bottom: 0px;
-            width: 100%;
-            background-color: #000;
+#wrap {
+  width: 100%;
+}
+header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  z-index: 9999;
+  background-color: white;
+  position: fixed;
+  height: 70px;
+}
+.header_in {
+  width: 1200px;
+  margin: 0 5.6%;
+  height: 70px;
+}
+.header_in {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  position: relative;
+}
+.header_in .logo {
+  width: 150px;
+  line-height: 50px;
+  color: #f8f8f8;
+  text-align: center;
+  height: 70px;
+  float: left;
+}
+nav {
+  float: left;
+  text-align: center;
+  width: 600px;
+  height: 80px;
+  margin: 0 100px;
+}
+nav li {
+  float: left;
+  width: 170px;
+  height: 70px;
+  line-height: 70px;
 }
 
-.sub2_left_view{width: 100%; 
-        position: relative;
-                height: 500px;
-                margin: 0 auto;}
-.sub2_img{width: 100%;
-        height: 500px;}
-.sub2_img li{width: 100%;
+.nav li a {
+  font-weight: bold;
+}
+.login {
+  width: 150px;
+  height: 70px;
+  font-size: 13px;
+  float: left;
+}
+.login_bottom {
+  width: 100%;
+  margin-left: 10px;
+  height: 35px;
+  line-height: 45px;
+  float: left;
+  text-align: center;
+}
+
+.login a {
+  margin: 5px;
+}
+
+.sub2_page {
+  width: 1200px;
+  margin: 50px auto;
+  height: 800px;
+}
+.sub2_left {
+  width: 600px;
+  height: 500px;
+  position: relative;
+
+  float: left;
+}
+
+.sub2_button {
+  width: 100px;
+  position: absolute;
+  left: -50px;
+  z-index: 999;
+}
+.sub2_btn {
+}
+.sub2_btn li {
+  width: 100px;
+  margin-top: 50px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.sub2_btn li:nth-child(1) {
+  background: url(/image/sub02img\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sub2_btn li:nth-child(2) {
+  background: url(/image/sub02img\ \(2\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sub2_btn li:nth-child(3) {
+  background: url(/image/sub02img\ \(3\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sub2_btn li.on {
+  opacity: 0.4;
+  transition: 1s all;
+  left: 20px;
+}
+.sub2_btn li::before {
+  content: "";
+  height: 100px;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  border-radius: 10px;
+
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #000;
+}
+
+.sub2_left_view {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+}
+.sub2_img {
+  width: 100%;
+  height: 500px;
+}
+.sub2_img li {
+  width: 100%;
   height: 500px;
   border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
-  
 }
-.sub2_img li:nth-child(1){background: url(/image/sub02img\ \(1\).jpg);
-        background-size: cover;
-                background-position: center;
-                                z-index: 400;
-                        }
-.sub2_img li:nth-child(2){
-        z-index: 300;
-        background: url(/image/sub02img\ \(2\).jpg);
-        background-size: cover;
-        background-position: center; 
-       }
-.sub2_img li:nth-child(3){
-        z-index: 200;
-        background: url(/image/sub02img\ \(3\).jpg);
-        background-size: cover;
-        background-position: center;}
-
-
-
-
-.sub2_right{width: 600px; 
-        margin: 0 auto;
-    height: 500px;
-float: left;}
-
-.sub2_text{width: 500px;
-        text-align: center;
-        border: 1px solid #ccc;
-        margin: 0 auto;
-        border-radius: 10px;
-        height: 500px;
-    }
-.sub2_text h1{width: 100%;
-        height: 45px;
-        margin-top: 40px;
-                text-align: center;}
-.sub2_textL{width: 50%;height: 450px;
-        float: left;
-      }
-
-
-.sub2_textL li{height: 50px;
-        width: 85%;
-        text-align: right; 
-        margin: 30px 0;      
-        line-height: 50px;}
-
-
-.sub2_textR{width: 50%; height: 450px;
-        float: left;
-        text-align: left;
- }
-.sub2_textR li{height: 50px; margin: 30px 0;
-        width: 100%;
-         line-height: 50px;}
-                                                           /* 2p 시작 */
-
-.sub2_page2{width: 100%; height: 2100px;
-             }
-.sub2_infoM{width: 1200px; height: 2000px;
-                        margin: 0 auto;}
-                                                     /* 2p p1시작 */
-.sub2_info{width: 100%;
-                height: 500px;
-                margin-top: 100px;}
-.sub2_p1_left{width: 50%; 
-        float: left;
-        position: relative;
-
-        height: 500px;
+.sub2_img li:nth-child(1) {
+  background: url(/image/sub02img\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 400;
 }
-.sub_p1_img{width: 90%;
-height: 490px;
-z-index: 199;
-left: 20px;
-background: url(/image/early-morning-gedf922429_1280.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-position: absolute;
+.sub2_img li:nth-child(2) {
+  z-index: 300;
+  background: url(/image/sub02img\ \(2\).jpg);
+  background-size: cover;
+  background-position: center;
 }
-.sub2_p1_line{width:800px;
-        position: absolute;
-        background-color: rgba(175, 172, 172, 0.589);
-        z-index: 10;
-        left:-200px;
-        bottom: 0px;
-height: 150px;}       
-.sub2_p1_right{width: 49%; 
-        float: left;
-        height: 490px;
-   border: 1px solid #ccc;
-        }
-.sub2_p1_text{width: 100%;
-        margin-top: 100px;
-      }
-.sub2_p1_text h1{margin: 20px;}
-.sub2_p1_text h2{margin: 20px;}
-.sub2_p1_text p{font-size: 15px;
-                        margin: 20px;
-                }
+.sub2_img li:nth-child(3) {
+  z-index: 200;
+  background: url(/image/sub02img\ \(3\).jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-                                                 /* 2p p2시작 */
-.sub2_p2_right{width: 50%; 
-                float: left;
-                position: relative;
-        
-                height: 500px;
-        }
-.sub_p2_img{width: 90%;
-        height: 490px;
-        z-index: 199;
-        right: 20px;
-        background: url(/image/adult-g7838248a3_640.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        }
-.sub2_p2_line{width:800px;
-                position: absolute;
-                background-color: rgba(175, 172, 172, 0.589);
-                z-index: 10;
-                right: -200px;
-                bottom: 0px;
-        height: 150px;}       
+.sub2_right {
+  width: 600px;
+  margin: 0 auto;
+  height: 500px;
+  float: left;
+}
 
-.sub2_p2_left{width: 49%; 
-                float: left;
-                height: 490px;
-           border: 1px solid #ccc;
-                }
-.sub2_p2_text{width: 100%;
-                margin-top: 100px;
-              }
-.sub2_p2_text h1{margin: 20px;}
-.sub2_p2_text h2{margin: 20px;}
-.sub2_p2_text p{font-size: 15px; margin: 20px;}
+.sub2_text {
+  width: 500px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 500px;
+}
+.sub2_text h1 {
+  width: 100%;
+  height: 45px;
+  margin-top: 40px;
+  text-align: center;
+}
+.sub2_textL {
+  width: 50%;
+  height: 450px;
+  float: left;
+}
 
-                                                  /* 2p p3시작 */
+.sub2_textL li {
+  height: 50px;
+  width: 85%;
+  text-align: right;
+  margin: 30px 0;
+  line-height: 50px;
+}
 
-.sub_p3_img{width: 90%;
-        height: 490px;
-        z-index: 199;
-        left: 20px;
-        background: url(/image/page02\ \(1\).jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;}
-.sub2_p3_line{width:800px;
-        position: absolute;
-        background-color: rgba(175, 172, 172, 0.589);
-        z-index: 10;
-        left:-200px;
-        bottom: 0px;
-height: 150px;}
+.sub2_textR {
+  width: 50%;
+  height: 450px;
+  float: left;
+  text-align: left;
+}
+.sub2_textR li {
+  height: 50px;
+  margin: 30px 0;
+  width: 100%;
+  line-height: 50px;
+}
+/* 2p 시작 */
 
-                                                  /* 2p p4시작 */
+.sub2_page2 {
+  width: 100%;
+  height: 2100px;
+}
+.sub2_infoM {
+  width: 1200px;
+  height: 2000px;
+  margin: 0 auto;
+}
+/* 2p p1시작 */
+.sub2_info {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+.sub2_p1_left {
+  width: 50%;
+  float: left;
+  position: relative;
 
-.sub_p4_img{width: 90%;
-        height: 490px;
-        z-index: 199;
-        right: 20px;
-        background: url(/image/torii-g8c9a909f4_1280.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;}
-.sub2_p4_line{width:800px;
-        position: absolute;
-        background-color: rgba(175, 172, 172, 0.589);
-        z-index: 10;
-        right: -200px;
-        bottom: 0px;
-height: 150px;}
+  height: 500px;
+}
+.sub_p1_img {
+  width: 90%;
+  height: 490px;
+  z-index: 199;
+  left: 20px;
+  background: url(/image/early-morning-gedf922429_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.sub2_p1_line {
+  width: 800px;
+  position: absolute;
+  background-color: rgba(175, 172, 172, 0.589);
+  z-index: 10;
+  left: -200px;
+  bottom: 0px;
+  height: 150px;
+}
+.sub2_p1_right {
+  width: 49%;
+  float: left;
+  height: 490px;
+  border: 1px solid #ccc;
+}
+.sub2_p1_text {
+  width: 100%;
+  margin-top: 100px;
+}
+.sub2_p1_text h1 {
+  margin: 20px;
+}
+.sub2_p1_text h2 {
+  margin: 20px;
+}
+.sub2_p1_text p {
+  font-size: 15px;
+  margin: 20px;
+}
+
+/* 2p p2시작 */
+.sub2_p2_right {
+  width: 50%;
+  float: left;
+  position: relative;
+
+  height: 500px;
+}
+.sub_p2_img {
+  width: 90%;
+  height: 490px;
+  z-index: 199;
+  right: 20px;
+  background: url(/image/adult-g7838248a3_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.sub2_p2_line {
+  width: 800px;
+  position: absolute;
+  background-color: rgba(175, 172, 172, 0.589);
+  z-index: 10;
+  right: -200px;
+  bottom: 0px;
+  height: 150px;
+}
+
+.sub2_p2_left {
+  width: 49%;
+  float: left;
+  height: 490px;
+  border: 1px solid #ccc;
+}
+.sub2_p2_text {
+  width: 100%;
+  margin-top: 100px;
+}
+.sub2_p2_text h1 {
+  margin: 20px;
+}
+.sub2_p2_text h2 {
+  margin: 20px;
+}
+.sub2_p2_text p {
+  font-size: 15px;
+  margin: 20px;
+}
+
+/* 2p p3시작 */
+
+.sub_p3_img {
+  width: 90%;
+  height: 490px;
+  z-index: 199;
+  left: 20px;
+  background: url(/image/page02\ \(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.sub2_p3_line {
+  width: 800px;
+  position: absolute;
+  background-color: rgba(175, 172, 172, 0.589);
+  z-index: 10;
+  left: -200px;
+  bottom: 0px;
+  height: 150px;
+}
+
+/* 2p p4시작 */
+
+.sub_p4_img {
+  width: 90%;
+  height: 490px;
+  z-index: 199;
+  right: 20px;
+  background: url(/image/torii-g8c9a909f4_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.sub2_p4_line {
+  width: 800px;
+  position: absolute;
+  background-color: rgba(175, 172, 172, 0.589);
+  z-index: 10;
+  right: -200px;
+  bottom: 0px;
+  height: 150px;
+}
