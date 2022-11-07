@@ -10,33 +10,30 @@ a{text-decoration: none;
     color: #606060;
 }
 #wrap{width: 100%;}
-header{width: 100%;
-    border-bottom: 1px solid #ccc;
-    position: fixed;  z-index: 9999;
-    background-color: white;    
-            height: 70px;}
-.header_in{width:1200px; margin: 0 5.6%; 
-    height: 70px;
-    position: relative;
-
-    }
-.header_in .logo{width: 200px;
+.header_in .logo{width: 150px;
     line-height: 50px;
-               text-align: center;  height: 70px; float: left;}
-               nav{float: left;  
-                width: 800px; height: 80px; margin: 0 auto;
-            }
-        nav li{float: left; width: 100px; height: 70px;
-                    line-height: 70px;
-                    margin-left: 10px;
-                    text-align: left;
-                 }
-         .login{width:200px; height: 70px;
-            font-size: 13px;
-                float: left;}
+    color: #f8f8f8;
+         text-align: center;  height: 70px; float: left;}
+nav{
+    float: left;
+    text-align: center;
+        width: 600px; height: 80px;
+    margin: 0 100px;
+    }
+nav li{float: left;
+    width:170px;
+     height: 70px;
+            line-height: 70px;
+         }
+
+.nav li a{font-weight: bold;}        
+.login{width:150px; height: 70px;
+    font-size: 13px;
+      float: left;}
         .login_bottom{width: 100%; margin-left: 10px;
                 height:35px; line-height: 45px;
         float: left; text-align: center;}
+        .login a{margin: 5px;}
 
 
 .log{width: 400px;

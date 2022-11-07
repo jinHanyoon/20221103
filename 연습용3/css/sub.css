@@ -4,38 +4,45 @@ a{text-decoration: none;
     color: #606060;}
 section{width: 100%; 
         height: 700px;
+
    }
         
-#wrap{width: 100%;}
+#wrap{width: 100%;
+  }
 header{width: 100%;
     border-bottom: 1px solid #ccc;
     z-index: 9999;
-    background-color: white; 
+   background-color: white;
     position: fixed;
             height: 70px;}
-.header_in{width:1200px; margin: 0 5.6%; height: 70px;
-     }
-.header_in .logo{width: 200px;
-    line-height: 50px;
-               text-align: center;  height: 70px; float: left;}
-               nav{float: left;  
-                width: 800px; height: 80px; margin: 0 auto;
-            }
-        nav li{float: left; width: 100px; height: 70px;
-                    line-height: 70px;
-                    margin-left: 10px;
-                    text-align: left;
-                 }
-.login{width:200px; height: 70px;
-        float: left;}
-
+            .header_in .logo{width: 150px;
+                line-height: 50px;
+                color: #f8f8f8;
+                     text-align: center;  height: 70px; float: left;}
+            nav{
+                float: left;
+                text-align: center;
+                    width: 600px; height: 80px;
+                margin: 0 100px;
+                }
+            nav li{float: left;
+                width:170px;
+                 height: 70px;
+                        line-height: 70px;
+                     }
+            
+            .nav li a{font-weight: bold;}        
+            .login{width:150px; height: 70px;
+                font-size: 13px;
+                  float: left;}
+                  .login a{margin: 5px;}
 .login_bottom{width: 100%; margin-left: 10px;
         height:35px; line-height: 50px;
 float: left; text-align: center;}
 .sub01_page{padding-top: 70px;}
 .sub01{width: 1200px; margin: 0 auto;
             height: 700px;
-            background-color: white;
+          
             }
 
 .sub01_left{width: 600px; height: 700px; float: left;
@@ -47,7 +54,7 @@ float: left; text-align: center;}
     box-shadow: 5px 5px 10px black;
     border-radius: 5px;
 
-                height: 400px; background-color: white;}
+                height: 400px; }
 
 .sub01_view {
 
@@ -55,14 +62,18 @@ float: left; text-align: center;}
 .sub01_view li{width: 400px; height: 400px;
                 top:0; left: 0;
                 float: left; position: absolute;} 
-.sub01_view li:nth-child(1){background: url(/image/05img1\ \(1\).jpg);
-    z-index: 300;        
+.sub01_view li:nth-child(1){background: url(/image/subimg\ \(1\).png);
+    z-index: 300;     
+    background-position: center;   
     background-size: cover;}
-.sub01_view li:nth-child(2){ background: url(/image/05img1\ \(2\).jpg);
+.sub01_view li:nth-child(2){ background: url(/image/subimg\ \(5\).jpg);
 z-index: 200;
+    background-position: center;   
+
     background-size: cover;}
-.sub01_view li:nth-child(3){background-image: url(/image/photographer-g1017a106d_640.jpg);
+.sub01_view li:nth-child(3){background-image: url(/image/subimg\ \(6\).jpg);
     z-index: 100;
+    background-position: center;
     background-size: cover;}
 
 
@@ -94,13 +105,18 @@ margin: 0 auto;
         bottom: 0px;
         background-color: #000;}
 
-.sub01_button li:nth-child(1){background: url(/image/05img1\ \(1\).jpg);
+.sub01_button li:nth-child(1){background: url(/image/subimg\ \(1\).png);
+    background-position: center;
                     background-size: cover;}
-.sub01_button li:nth-child(2){background: url(/image/05img1\ \(2\).jpg);
-    background-size: cover;}
+.sub01_button li:nth-child(2){background: url(/image/subimg\ \(5\).jpg);
+    background-size: cover;
+    background-position: center;
+}
 .sub01_button li:nth-child(3){
     background-size: cover;
-    background-image: url(/image/photographer-g1017a106d_640.jpg);}
+    background-position: center;
+
+    background-image: url(/image/subimg\ \(6\).jpg);}
 
 
 
@@ -111,7 +127,7 @@ margin: 0 auto;
 .sub01_right{width: 600px; height: 700px; float: right;
      }
 
-.sub01_info{width:600px; height: 600px; background-color:  white;
+.sub01_info{width:600px; height: 600px; 
         margin-top: 40px;}
 
 .sub01_box{width: 600px; height: 150px;
@@ -304,16 +320,16 @@ right: 10px;}
 
 
     .log{width: 400px;
-        top: 60px;
+        top: 70px;
         border-radius:10px;
-    
+        z-index: 9999;
         display: none;
         text-align: center;
         right: 20px; 
         position: absolute;
             border: 1px solid #ccc;
         height: 200px;
-        background-color: rgba(255, 255, 255, 0.226);
+        background-color: white;
     }
 
 @media screen and (max-width:1024px){

@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="./css/sub2.css">
     <script src="./js/main.js"></script>
     <script>
+        $(document).ready(function(){
+            let current= 0; 
+            $('.sub2_btn li').click(function(){
+                var i= $(this).index()
+             $('.sub2_btn li').removeClass('on')
+                 $(this).addClass('on')
+                console.log(i)
+                move(i)
 
+            })
+            function move(i){
+                if(current == i)return;//같은 버튼을 클릭했을때 실행되지 않게 함 
+                let currentE1 = $('.sub2_img li').eq(current);//슬라이드에서 현재보이는 이미지 li
+                let nextE1 = $('.sub2_img li').eq(i); //슬라이드에서 다음에 보이는 이미지 li
+                currentE1.css({opacity:1}).stop().animate({opacity:0})
+                nextE1.css({opacity:0}).stop().animate({opacity:1})
+                current =i
+        }
+        })
     </script>
 </head>
 <body>
@@ -25,11 +43,7 @@
                     </ul>
                 </nav>
                 <div class="login">
-                    <div class="login_top">
-                        <a href="#">고객센터</a>
-                        <a href="#">이벤트</a>
-                        
-                    </div>
+                 
                     <div class="login_bottom">
                         <a href="#" class="logBT">로그인</a>
                         <a href="./new.html">회원가입</a>
@@ -53,6 +67,13 @@
 
         <div class="sub2_page">
             <div class="sub2_left">
+                <div class="sub2_button">
+                    <ul class="sub2_btn">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
                 <div class="sub2_left_view">
                 <ul class="sub2_img">
                     <li></li>
@@ -63,9 +84,10 @@
             </div>
             <div class="sub2_right">
                 <div class="sub2_text">
+                    <h1>SamSung/PHone/Book</h1>
                     <div class="sub2_textL">
                         <ul>
-                            <li>상품이름:</li>
+                     
                             <li>상품가격:</li>
                             <li>소비자가격:</li>
                             <li>할인가격:</li>
@@ -75,11 +97,11 @@
                     </div>
                     <div class="sub2_textR">
                         <ul>
-                            <li>ddddddd</li>
-                            <li>000000</li>
-                            <li>000000</li>
-                            <li>2020202원</li>
-                            <li>상품설명</li>
+                       
+                            <li>000000원</li>
+                            <li>000000원</li>
+                            <li>000000원</li>
+                            <li>--</li>
 
                         </ul>
 
