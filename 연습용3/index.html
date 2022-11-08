@@ -17,7 +17,7 @@
             $('.page03').hide()
             $('.page01').hide()
             $('.page02').hide()
-                
+            $('.page02 .left_text').eq(0).addClass('on')
             $('.log').hide()
             $('.logBT').click(function(e){
                 $('.log').fadeToggle(500)
@@ -56,6 +56,9 @@
                 $('.page02_button li').removeClass('on')
             $('.page02_button li').eq(page02).addClass('on')
 
+            $('.page02 .left_text').removeClass('on')
+
+            $('.page02 .left_text').eq(page02).addClass('on')
             })
 
             $('nav li').click(function(e){
@@ -244,29 +247,29 @@
                         <li>
                             <div class="page02_icon1"></div>
                             <div class="left_text">
-                                <p>기타 이미지에 관한 글</p>
-                                <p>기타 이미지에 관한 부가설명</p>
+                                <p>미래의 디자인은 디테일을 결정합니다.</p>
+                                <p>가장 눈이가는 디자인</p>
                             </div>
                         </li>
                         <li>
                             <div class="page02_icon2"></div>
                             <div class="left_text">
-                                <p>기타 이미지에 관한 글</p>
-                                <p>기타 이미지에 관한 부가설명</p>
+                                <p>Crystal 프로세서로 더 선명하고</p>
+                                <p>에어슬림 디자인으로 더 얇게</p>
                             </div>
                         </li>
                         <li>
                             <div class="page02_icon3"></div>
                             <div class="left_text">
-                                <p>기타 이미지에 관한 글</p>
-                                <p>기타 이미지에 관한 부가설명</p>
+                                <p>사고가 나더라도 스마일</p>
+                                <p>케어플러스로 분실이나 파손에도 걱정없이</p>
                             </div>
                         </li>
                         <li>
                             <div class="page02_icon4"></div>
                             <div class="left_text">
-                                <p>기타 이미지에 관한 글</p>
-                                <p>기타 이미지에 관한 부가설명</p>
+                                <p>셀피의 새로운 시대를 열다</p>
+                                <p>간편하게 후면 카메라로 촬영</p>
                             </div>
                         </li>
 

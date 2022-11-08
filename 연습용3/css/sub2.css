@@ -234,9 +234,10 @@ nav li {
   line-height: 60px;
   background-color: cornflowerblue;   
   color: #f8f8f8;
-
   border-radius: 10px;
-  width: 150px; height: 60px;}
+  width: 150px; height: 60px;
+  cursor: pointer;
+}
 .sub2_text .jjim{ 
   border: 1px solid #ccc;
   line-height: 60px;
@@ -244,11 +245,18 @@ nav li {
   border-radius: 10px;
   background-color: orange;
   color: #f8f8f8;
+  cursor: pointer;
+
   float: left; width: 150px; height: 60px;}
-  .finish{width: 100%;
-    color: red;
-      height: 100px; margin: 0 auto;
-        background-color: #606060;}
+
+
+#buy.on{ opacity: 0.7;
+    transition: 1s all;}
+.jjim.on{
+transition: 1s all;
+opacity: 0.6; }
+
+    
 
 
 /* 2p 시작 */
@@ -313,6 +321,7 @@ nav li {
 .sub2_p1_text h1 {
   color: rgba(0, 0, 0, 0.63);
   margin: 20px;
+
   font-size: 50px;
 
 }
@@ -351,7 +360,7 @@ nav li {
   box-shadow: 5px 5px 5px black;
   background-color: rgba(175, 172, 172, 0.781);
   z-index: 10;
-  right: -50px;
+  right: -200px;
   bottom: 0px;
   height: 150px;
   display: none;
@@ -419,7 +428,6 @@ nav li {
   z-index: 199;
   right: 20px;
   box-shadow: 5px 5px 10px black;
-
   background: url(/image/sub2Pimg\ \(1\).jpg);
   background-position: center;
   background-size: cover;
@@ -429,10 +437,10 @@ nav li {
 .sub2_p4_line {
   width: 900px;
   position: absolute;
-  box-shadow: 5px 5px 5px white;
-  background-color: rgba(31, 51, 21, 0.589);
+  box-shadow: 5px 5px 5px black;
+  background-color: rgba(194, 18, 18, 0.781);
   z-index: 10;
-  right: -50px;
+  right: -200px;
   bottom: 0px;
   height: 150px;
   display: none;
