@@ -181,7 +181,8 @@ color: #f8f8f8;
 .sub01_choise .buy{ float: left;
     border: 1px solid #ccc;
     line-height: 80px;
-    background-color: cornflowerblue;   
+    background-color: #4c4c4c;
+  
     color: #f8f8f8;
 
     border-radius: 10px;
@@ -191,7 +192,7 @@ color: #f8f8f8;
     line-height: 80px;
     margin-left: 20px;
     border-radius: 10px;
-    background-color: orange;
+    background-color: #939393;
     color: #f8f8f8;
 
     float: left; width: 200px; height: 80px;}
@@ -222,7 +223,8 @@ color: #f8f8f8;
      height: 130px;}
 #review_btn{position: absolute;
        bottom: 20px;
-    background-color: cornflowerblue;
+       background-color: #4c4c4c;
+
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #f8f8f8;
@@ -252,7 +254,8 @@ color: #f8f8f8;
 
 .delete{width: 80px; height: auto;
     position: absolute;
-    background-color: cornflowerblue;
+    background-color: #4c4c4c;
+
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #f8f8f8;

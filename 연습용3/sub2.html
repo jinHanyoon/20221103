@@ -10,6 +10,7 @@
     <script>
       $(document).ready(function () {
         let current = 0;
+        $('.sub2_btn li').eq(0).addClass('on')
         $(".sub2_btn li").click(function () {
           var i = $(this).index();
           $(".sub2_btn li").removeClass("on");
@@ -17,6 +18,61 @@
           console.log(i);
           move(i);
         });
+        
+
+        $('.M_login').click(function(){
+                    $('.nav_menuM').slideToggle(500)
+                })
+                $('.nav_menuM li').hover(function(){
+                    var m=$(this).index()
+                    $(this).addClass('on')
+                    $('.nav_menuM li a').eq(m).addClass('on')
+                },function(){
+                    $(this).removeClass('on')
+                    $('.nav_menuM li a').removeClass('on')
+}                )
+         $('.log').hide()
+            $('.logBT').click(function(){
+                $('.log').fadeToggle(500)
+            })
+            $('.log').mouseleave(function(){
+                $('.log').fadeOut(500)
+            })
+
+
+
+                $('.sub2_List li').mouseenter(function(){
+                  var q =$(this).index()
+                  if(q == 0){
+                    $('.sub2_p1_line').fadeIn(500)
+                  
+                  }if(q ==1){
+                    $('.sub2_p2_line').fadeIn(500)
+                  }
+                  if(q ==2){
+                    $('.sub2_p3_line').fadeIn(500)
+                }  if(q ==3){
+                    $('.sub2_p4_line').fadeIn(500)}
+
+
+                    $('.sub2_List li').mouseleave(function(){
+                    if(q==1){$('.sub2_p1_line').fadeOut(500)
+                  }if(q==2){
+                    $('.sub2_p2_line').fadeOut(500)
+                  }if(q==3){
+                 $('.sub2_p3_line').fadeOut(500)
+                  }
+                  if(true){
+                    $('.sub2_p4_line').fadeOut(500)
+                  }})
+
+
+
+                  })
+
+              
+
+
         function move(i) {
           if (current == i) return; //같은 버튼을 클릭했을때 실행되지 않게 함
           let currentE1 = $(".sub2_img li").eq(current); //슬라이드에서 현재보이는 이미지 li
@@ -59,7 +115,7 @@
         </ul>
       </div>
       <main>
-        <section class="sub2_page">
+        <section class="sub2_se">
           <div class="sub2_page">
             <div class="sub2_left">
               <div class="sub2_button">
@@ -85,23 +141,39 @@
                     <li>상품가격:</li>
                     <li>소비자가격:</li>
                     <li>할인가격:</li>
-                    <li>상품설명:</li>
+                    <li>수량:</li>
+                    <li>합계:</li>
+
                   </ul>
+                  <button id="buy">구매하기</button>
                 </div>
                 <div class="sub2_textR">
                   <ul>
+                    <li>1,100,000원</li>
                     <li>000000원</li>
                     <li>000000원</li>
-                    <li>000000원</li>
-                    <li>--</li>
+                    <li><input type="number"
+                      onchange='printName()'
+                      id="sub2_Num"
+                
+                      ></li>
+                    <li id="result"></li>
+
+               
                   </ul>
-                </div>
+                  <button class="jjim">장바구니</button>
+                </div>      
               </div>
             </div>
+            </div>
+  
           </div>
         </section>
         <section class="sub2_page2">
           <div class="sub2_infoM">
+            <ul class="sub2_List">
+              <li>
+          
             <div class="sub2_info p1">
               <div class="sub2_p1_left">
                 <div class="sub_p1_img"></div>
@@ -111,22 +183,24 @@
               <div class="sub2_p1_right">
                 <div class="sub2_p1_text">
                   <h1>01</h1>
-                  <h2>보들도 스타일러쉬하게</h2>
-                  <p>aaaaaaaaaaaaaaaa</p>
-                  <p>aaaaaaaaaaaaaaaa</p>
-                  <p>aaaaaaaaaaaaaaaa</p>
+                  <h2> 충격으로부터안전하게</h2>
+                  <p> Corning® Gorilla® Glass Victus®+가 더해져 스크래치 걱정에도</p>
+                  <p>안심할 수 있으니까요. 또한 견고한 아머 알루미늄 프레임으로 만들어져</p>
+                  <p>충격으로부터 당신의 핸드폰을 보호할 거예요.                  </p>
                 </div>
               </div>
             </div>
+          </li>
+          <li>
             <div class="sub2_info p2">
               <div class="sub2_info p2">
                 <div class="sub2_p2_left">
                   <div class="sub2_p2_text">
-                    <h1>01</h1>
-                    <h2>보들도 스타일러쉬하게</h2>
-                    <p>aaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaa</p>
+                    <h1>02</h1>
+                    <h2>보정이 필요없는 디테일</h2>
+                    <p>SamSung 핸드폰과 함께라면 고해상도의 걸작으로 탄생합니다. </p>
+                    <p>디테일을 강화해 깊이와 선명도를 높여</p>
+                    <p>작품같은 사진을 완성해주죠.</p>
                   </div>
                 </div>
 
@@ -136,7 +210,8 @@
                 </div>
               </div>
             </div>
-
+          </li>
+          <li>
             <div class="sub2_info p3">
               <div class="sub2_p1_left">
                 <div class="sub_p3_img"></div>
@@ -145,24 +220,25 @@
 
               <div class="sub2_p1_right">
                 <div class="sub2_p1_text">
-                  <h1>01</h1>
-                  <h2>보들도 스타일러쉬하게</h2>
-                  <p>aaaaaaaaaaaaaaaa</p>
-                  <p>aaaaaaaaaaaaaaaa</p>
-                  <p>aaaaaaaaaaaaaaaa</p>
+                  <h1>03</h1>
+                  <h2>섬세함의 끝에 다다른 컬러</h2>
+                  <p> 그레이 그린, 팬텀 블랙, 베이지, 세 가지 컬를 만나 보세요.</p>
+                  <p>특별한 디자인과 클래식하고 </p>
+                  <p>자연스러운 색의 조합이 시선을 사로잡을 거예요.</p>
                 </div>
               </div>
             </div>
-
+          </li>
+          <li>
             <div class="sub2_info p4">
               <div class="sub2_info p2">
                 <div class="sub2_p2_left">
                   <div class="sub2_p2_text">
-                    <h1>01</h1>
-                    <h2>보들도 스타일러쉬하게</h2>
-                    <p>aaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaa</p>
+                    <h1>04</h1>
+                    <h2>프로급 카메라를 소유한다는 것</h2>
+                    <p>업그레이드된 후면 카메라, 스페이스 줌과 나이토그래피까지.</p>
+                    <p>드디어 TAP도 프로급 카메라를 갖추었습니다.</p>
+                    <p>대화면 디스플레이와 혁신적인 카메라로 사진 촬영 기술까지</p>
                   </div>
                 </div>
 
@@ -172,9 +248,23 @@
                 </div>
               </div>
             </div>
+          </li>
+          </ul>
           </div>
         </section>
       </main>
     </div>
+    <div class="log">
+      <div class="log_text">
+          <p class="log_textP">X</p>
+         <h1>Login</h1>
+         <div class="input_con">
+          <input type="text" placeholder="ID를 입력해주세요" id="login">
+          <input type="password" id="password" placeholder="비밀번호를 입력해주세요">
+         <button id="log_go">로그인</button>
+      </div>
+     </div>
+ </div>
+    <script src="/js/sub2.js"></script>
   </body>
 </html>
